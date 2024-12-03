@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homeactivity"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="60dp"
+            android:layout_height="52dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/settingss"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+        <TextView
+            android:id="@+id/chooseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="Choose"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/user_logo"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+    </RelativeLayout>
+
+    <!-- Main Image Section -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="254dp"
+        android:layout_height="219dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/streettmarket" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <!-- Search Meal Plans -->
+        <LinearLayout
+            android:id="@+id/mealPlansLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/custom_style_button"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="52dp"
+                android:src="@drawable/noodles"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="21dp"
+                android:text="Search Recipes"/>
+        </LinearLayout>
+
+        <!-- Barcode Scanner -->
+
+        <!-- Find Supermarkets -->
+        <LinearLayout
+            android:id="@+id/supermarketsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_style_button"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="52dp"
+                android:src="@drawable/healthyfood"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="21dp"
+                android:text="Search Restaurants"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/barcodeScannerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_style_button"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="52dp"
+                android:src="@drawable/vegetables"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="21dp"
+                android:text="Barcode Scanner"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/chatbotLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_style_button"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="52dp"
+                android:src="@drawable/eating"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="21dp"
+                android:text="Talk To Specialist"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

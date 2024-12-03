@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_signup"
+    android:padding="16dp"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:id="@+id/signupimg"
+        android:layout_width="135dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/hotpot" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connectez Vous"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginBottom="18dp"
+        android:padding="12dp"
+        android:background="@drawable/custom_style_edit_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/custom_style_edit_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textColorHint="@color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_style_button"
+        android:backgroundTint="@color/green"
+        android:text="Sign In"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tvSignUpRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/blue"
+        android:layout_gravity="center" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true" />
+
+</LinearLayout>

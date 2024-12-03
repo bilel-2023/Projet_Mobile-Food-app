@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_signup"
+    android:padding="16dp"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/signupimg"
+        android:layout_width="135dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/hotpot" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create An Account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="44dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/custom_style_edit_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textColorHint="@color/black" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/custom_style_edit_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:background="@drawable/custom_style_edit_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textColorHint="@color/black" />
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_style_button"
+        android:backgroundTint="@color/green"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Sign Up"
+        android:layout_marginBottom="16dp" />
+    <Button
+        android:id="@+id/btnGoogleSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/custom_style_button"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:text="Sign Up with Google"
+        android:layout_marginBottom="16dp" />
+
+
+    <TextView
+        android:id="@+id/tvSignInRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign In"
+        android:textColor="@color/green"
+        android:layout_gravity="center" />
+
+
+
+</LinearLayout>

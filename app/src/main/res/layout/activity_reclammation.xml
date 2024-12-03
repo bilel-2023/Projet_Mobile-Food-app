@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_marginTop="45dp"
+    android:padding="16dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="25dp"
+    android:textColor="@color/green"
+    android:layout_marginBottom="35dp"
+    android:text="Send Your Reclammation"/>
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your message here"
+        android:paddingLeft="20dp"
+        android:background="@drawable/custom_style_button"
+        android:inputType="textMultiLine"
+        android:minLines="4" />
+
+    <Button
+        android:id="@+id/send_reclamation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Reclamation"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

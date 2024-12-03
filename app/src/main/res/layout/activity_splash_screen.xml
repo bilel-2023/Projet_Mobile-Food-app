@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <!-- Welcome text -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Cooking App"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <!-- Description text -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:text="Discover delicious recipes, plan meals, and explore food options effortlessly with our app!"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Centered image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="323dp"
+        android:layout_height="312dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/dinner" />
+
+    <!-- Spacer to push the button to the bottom -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="62dp"
+        android:gravity="center"
+        android:text="All The Recipes You Need"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <!-- Start button -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/green"
+        android:text="Get Started"
+        android:textColor="#FFFFFF"
+        app:rippleColor="#CDA7A7"
+        app:strokeColor="#FFFFFF" />
+
+</LinearLayout>
